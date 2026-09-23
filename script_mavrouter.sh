@@ -2,7 +2,7 @@
 
 set -e
 
-echo "Script ADB ROV untuk routing protokol Mav dimulai!"
+echo "Script routing Mavlink startoo!"
 echo " "
 sleep 1
 
