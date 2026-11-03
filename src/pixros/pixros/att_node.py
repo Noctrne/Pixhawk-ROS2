@@ -11,11 +11,10 @@ class PixhawkAttitudeNode(Node):
         super().__init__('pixhawk_attitude_node')
         self.publisher_att = self.create_publisher(PixAtt, 'pix/sensor/attitude', 10)
         
-        
         self.pix_address = '127.0.0.1:14553'
         self.pix_baud = 57600
         
-        self.get_logger().info('Mencoba connect mavrouter...')
+        self.get_logger().info('Trying connect mavrouter...')
         self.master = mavutil.mavlink_connection(self.pix_address, self.pix_baud)
         self.master.wait_heartbeat()
         self.get_logger().info('Node ATTITUDE berhasil connect ke mavrouter - Pixhawk 6C')
