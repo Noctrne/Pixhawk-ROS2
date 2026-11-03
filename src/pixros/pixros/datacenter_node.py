@@ -11,7 +11,7 @@ class PixhawkDataCenterNode(Node):
         self.subscriber_att = self.create_subscription(PixAtt, 'pix/sensor/attitude', self.att_cb, 10)
         self.subscriber_baro = self.create_subscription(PixBaro, 'pix/sensor/barometer',self.baro_cb ,10)
         
-        #init data awal
+        #inisiasi data awal
         self.att_subsdata = None
         self.baro_subsdata = None
         
