@@ -1,0 +1,68 @@
+# ===== ROS 2 workspace (colcon) =====
+build/
+install/
+log/
+COLCON_IGNORE
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+.venv/
+venv/
+env/
+dist/
+python_modules/
+
+# ===== C/C++ build artifacts =====
+*.o
+*.so
+*.so.*
+*.a
+*.dylib
+*.dll
+*.exe
+*.out
+*.lo
+*.la
+.libs/
+compile_commands.json
+
+# ===== PX4 / ArduPilot / MAVLink =====
+*.ulg
+*.px4log
+*.bin
+*.tlog
+ulogs/
+logs/
+MicroXRCEAgent/
+
+# ===== Rosbag / recording =====
+*.bag
+*.db3
+*.mcap
+metadata.yaml
+rosbag2_*/
+
+# ===== IDE / editor =====
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.code-workspace
+.clangd/
+
+# ===== OS =====
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===== Temporary files =====
+*.tmp
+*.bak
+*.pid
+core
+core.*
